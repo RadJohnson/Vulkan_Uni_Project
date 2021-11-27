@@ -1,6 +1,6 @@
-#include "Window.h"
+#include "WindowStuff.h"
 
-namespace window 
+namespace newWindow
 {
 	Window::Window(int _width, int _height, string _windowName) : width{ _width }, height{ _height }, windowName{ _windowName }//after colon is member initialiser list used to set valuse to the variables
 	{

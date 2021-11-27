@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Window.h"
+#include "WindowStuff.h"
 
-namespace window
+namespace newWindow
 {
 	class App
 	{
@@ -13,6 +13,6 @@ namespace window
 		void Run();
 
 	private:
-		Window window{ WIDTH,HEIGHT, "Hello Vulkan" };
+		Window window{ WIDTH,HEIGHT, "Vulkan Window" };
 	};
 }

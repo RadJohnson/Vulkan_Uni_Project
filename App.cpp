@@ -1,9 +1,12 @@
 #include "F_App.h"
 
-namespace Window
+namespace newWindow
 {
-	void Run()
+	void App::Run()
 	{
-
+		while (!window.shouldClose())
+		{
+			glfwPollEvents();
+		}
 	}
 }

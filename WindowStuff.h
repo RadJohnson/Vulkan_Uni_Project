@@ -7,13 +7,21 @@ using namespace std;
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
-namespace window
+namespace newWindow
 {
 	class Window
 	{
 	public:
 		Window(int _width, int _height, string _windowName);
 		~Window();
+
+		Window(const Window&) = delete;
+		Window& operator=(const Window &) = delete;
+
+		bool shouldClose()
+		{
+			return glfwWindowShouldClose(window);
+		}
 
 	private:
 		void initWindow();
