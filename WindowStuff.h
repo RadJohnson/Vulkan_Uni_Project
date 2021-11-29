@@ -1,6 +1,6 @@
 #pragma once
 
-using namespace std;
+//using namespace std;
 
 #include <string>
 
@@ -12,7 +12,7 @@ namespace newWindow
 	class Window
 	{
 	public:
-		Window(int _width, int _height, string _windowName);
+		Window(int _width, int _height, std::string _windowName);
 		~Window();
 
 		Window(const Window&) = delete;
@@ -29,7 +29,7 @@ namespace newWindow
 		const int width;
 		const int height;
 
-		string windowName;
+		std::string windowName;
 		GLFWwindow* window;
 	};
 }

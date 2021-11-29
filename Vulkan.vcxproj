@@ -155,13 +155,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GPipeline.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="App.cpp" />
     <ClCompile Include="WindowStuff.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="F_App.h" />
+    <ClInclude Include="GPipeline.h" />
     <ClInclude Include="WindowStuff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compile.bat" />
+    <None Include="Simple_Shader.frag">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Simple_Shader.frag.spv" />
+    <None Include="Simple_Shader.vert">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Simple_Shader.vert.spv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

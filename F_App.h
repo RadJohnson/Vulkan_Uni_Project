@@ -2,6 +2,8 @@
 
 #include "WindowStuff.h"
 
+#include "GPipeline.h"
+
 namespace newWindow
 {
 	class App
@@ -14,5 +16,7 @@ namespace newWindow
 
 	private:
 		Window window{ WIDTH,HEIGHT, "Vulkan Window" };
+
+		Pipeline pipeline{"Simple_Shader.vert.spv", "Simple_Shader.frag.spv" };
 	};
 }

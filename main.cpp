@@ -52,6 +52,7 @@
 
 
 #include "F_App.h"
+#include "GPipeline.h"
 
 #include <cstdlib>
 #include <iostream>
