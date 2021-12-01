@@ -1,5 +1,7 @@
 #include "WindowStuff.h"
 
+#include <stdexcept>
+
 namespace newWindow
 {
 	Window::Window(int _width, int _height, std::string _windowName) : width{ _width }, height{ _height }, windowName{ _windowName }//after colon is member initialiser list used to set valuse to the variables
@@ -20,4 +22,13 @@ namespace newWindow
 
 		window = glfwCreateWindow(width, height, windowName.c_str(), nullptr, nullptr);
 	}
+
+	void Window::createWindowSurface(VkInstance instance, VkSurfaceKHR *surface)
+	{
+		if (glfwCreateWindowSurface(instance, window, nullptr, surface) != VK_SUCCESS)
+		{
+			throw std::runtime_error("Failed to create window surface");
+		}
+	}
+
 }

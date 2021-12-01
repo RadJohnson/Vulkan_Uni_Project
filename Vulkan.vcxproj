@@ -155,14 +155,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine_Device.cpp" />
     <ClCompile Include="GPipeline.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="App.cpp" />
+    <ClCompile Include="F_App.cpp" />
+    <ClCompile Include="Swap_Chain.cpp" />
     <ClCompile Include="WindowStuff.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Engine_Device.h" />
     <ClInclude Include="F_App.h" />
     <ClInclude Include="GPipeline.h" />
+    <ClInclude Include="Swap_Chain.h" />
     <ClInclude Include="WindowStuff.h" />
   </ItemGroup>
   <ItemGroup>
