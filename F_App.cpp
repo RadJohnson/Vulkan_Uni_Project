@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <array>
 
-namespace newWindow
+namespace Lve
 {
 	App::App()
 	{
@@ -88,7 +88,7 @@ namespace newWindow
 			renderPassInfo.renderArea.extent = swapChain.getSwapChainExtent();
 
 			std::array<VkClearValue, 2> clearValues{};
-			clearValues[0].color = { 0.1f ,0.1f ,0.1f ,1.0f};
+			clearValues[0].color = { 0.1f ,0.1f ,0.1f ,1.0f};// value changes the cololur of the background
 			clearValues[1].depthStencil = {1.0f ,0};
 			renderPassInfo.clearValueCount = static_cast<uint32_t>(clearValues.size());
 			renderPassInfo.pClearValues = clearValues.data();
@@ -114,7 +114,7 @@ namespace newWindow
 		
 		if (result != VK_SUCCESS && result != VK_SUBOPTIMAL_KHR)
 		{
-			throw std::runtime_error("Failed to aquire swapchain image");
+			throw std::runtime_error("Failed to aquire swap chain image");
 		}
 
 		result = swapChain.submitCommandBuffers(&commandBuffer[imageIndex], &imageIndex);

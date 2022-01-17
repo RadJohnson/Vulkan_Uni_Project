@@ -9,7 +9,7 @@
 #include <string>
 #include <vector>
 
-namespace newWindow 
+namespace Lve 
 {
 
 class Swap_Chain 
@@ -32,7 +32,8 @@ class Swap_Chain
   uint32_t width() { return swapChainExtent.width; }
   uint32_t height() { return swapChainExtent.height; }
 
-  float extentAspectRatio() {
+  float extentAspectRatio() 
+  {
     return static_cast<float>(swapChainExtent.width) / static_cast<float>(swapChainExtent.height);
   }
   VkFormat findDepthFormat();
@@ -49,10 +50,8 @@ class Swap_Chain
   void createSyncObjects();
 
   // Helper functions
-  VkSurfaceFormatKHR chooseSwapSurfaceFormat(
-      const std::vector<VkSurfaceFormatKHR> &availableFormats);
-  VkPresentModeKHR chooseSwapPresentMode(
-      const std::vector<VkPresentModeKHR> &availablePresentModes);
+  VkSurfaceFormatKHR chooseSwapSurfaceFormat(const std::vector<VkSurfaceFormatKHR> &availableFormats);
+  VkPresentModeKHR chooseSwapPresentMode(const std::vector<VkPresentModeKHR> &availablePresentModes);
   VkExtent2D chooseSwapExtent(const VkSurfaceCapabilitiesKHR &capabilities);
 
   VkFormat swapChainImageFormat;

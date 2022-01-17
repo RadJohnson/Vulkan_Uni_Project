@@ -9,7 +9,7 @@
 #include <set>
 #include <stdexcept>
 
-namespace newWindow 
+namespace Lve 
 {
 
 Swap_Chain::Swap_Chain(EngineDevice &deviceRef, VkExtent2D extent): device{deviceRef}, windowExtent{extent} 

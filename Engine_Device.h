@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-namespace newWindow 
+namespace Lve 
 {
 
 struct SwapChainSupportDetails 
@@ -25,7 +25,8 @@ struct QueueFamilyIndices
   bool isComplete() { return graphicsFamilyHasValue && presentFamilyHasValue; }
 };
 
-class EngineDevice {
+class EngineDevice 
+{
  public:
 #ifdef NDEBUG
   const bool enableValidationLayers = false;

@@ -5,7 +5,7 @@
 #include <iostream>
 #include <cassert>
 
-namespace newWindow
+namespace Lve
 {
 	Pipeline::Pipeline(EngineDevice& device, const std::string& vertFilepath, const std::string& fragFilepath, const PipelineConfigInfo& configInfo) : engineDevice{device}
 	{
@@ -86,6 +86,7 @@ namespace newWindow
 
 		VkGraphicsPipelineCreateInfo pipelineInfo{};
 		pipelineInfo.sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO;
+		pipelineInfo.stageCount = 2;
 		pipelineInfo.pStages = shaderStages;
 		pipelineInfo.pVertexInputState = &vertexInputInfo;
 		pipelineInfo.pInputAssemblyState = &configInfo.inputAssemblyInfo;

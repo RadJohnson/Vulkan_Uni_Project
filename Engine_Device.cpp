@@ -6,7 +6,7 @@
 #include <set>
 #include <unordered_set>
 
-namespace newWindow 
+namespace Lve 
 {
 
 // local callback functions

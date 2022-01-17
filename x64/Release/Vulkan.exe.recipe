@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\UNIWORK\Year2\PAPI\Vulkan\x64\Release\Vulkan.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>D:\UNIWORK\Year2\PAPI\Vulkan\Vulkan\Simple_Shader.frag</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\UNIWORK\Year2\PAPI\Vulkan\Vulkan\Simple_Shader.vert</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

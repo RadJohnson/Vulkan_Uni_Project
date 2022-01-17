@@ -2,7 +2,7 @@
 
 #include <stdexcept>
 
-namespace newWindow
+namespace Lve
 {
 	Window::Window(int _width, int _height, std::string _windowName) : width{ _width }, height{ _height }, windowName{ _windowName }//after colon is member initialiser list used to set valuse to the variables
 	{

@@ -1,0 +1,11 @@
+﻿  Engine_Device.cpp
+  GPipeline.cpp
+  main.cpp
+  F_App.cpp
+  Swap_Chain.cpp
+  WindowStuff.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1509 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Vulkan.vcxproj -> D:\UNIWORK\Year2\PAPI\Vulkan\x64\Release\Vulkan.exe

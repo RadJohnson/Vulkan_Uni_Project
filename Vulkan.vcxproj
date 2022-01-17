@@ -159,6 +159,7 @@
     <ClCompile Include="GPipeline.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="F_App.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="Swap_Chain.cpp" />
     <ClCompile Include="WindowStuff.cpp" />
   </ItemGroup>
@@ -166,11 +167,13 @@
     <ClInclude Include="Engine_Device.h" />
     <ClInclude Include="F_App.h" />
     <ClInclude Include="GPipeline.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="Swap_Chain.h" />
     <ClInclude Include="WindowStuff.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />
+    <None Include="FragmentShader.frag" />
     <None Include="Simple_Shader.frag">
       <FileType>CppCode</FileType>
       <DeploymentContent>true</DeploymentContent>
@@ -181,6 +184,7 @@
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="Simple_Shader.vert.spv" />
+    <None Include="VertexShader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

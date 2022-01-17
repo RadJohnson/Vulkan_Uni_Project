@@ -5,7 +5,7 @@
 #include <String>
 #include <Vector>
 
-namespace newWindow
+namespace Lve
 {
 	struct  PipelineConfigInfo
 	{
